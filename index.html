@@ -2,329 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>filter-filimo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filter-Film — a Filimo-style movie & series filter component. Filter by type, genre, country, language, age rating and HD quality.">
+    <meta name="theme-color" content="#ffb83f">
+    <title>Filter-Film — Movies & Series Filter</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-<h1>Filter-Film</h1>
-<div class="all-box-selected">
-    <div class="box-filter">
-        <ul class="ul-one">
-            <li class="li-one">
-                <span class="tattle-layer-1">Movies And Series</span>
-                <i class="layer-1-icon"></i>
-                <div class="box-layer-2">
-                    <ul class="ul-two">
-                        <li class="li-two">
-                        <span class="tattle-layer-2">
-                            All
-                        </span>
-                        </li>
-                        <li class="li-two">
-                        <span class="tattle-layer-2">
-                            Movies
-                        </span>
-                        </li>
-                        <li class="li-two">
-                        <span class="tattle-layer-2">
-                            Series
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="li-one">
-                <span class="tattle-layer-1">Genre</span>
-                <i class="layer-1-icon"></i>
-                <div class="box-layer-2 box-layer-2-1 ">
-                    <ul class="ul-two ul-two-1">
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            All
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Religious / History
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Family
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Comedy
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Theater
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Panic
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Short
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Concert
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Action
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Romantic
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Documentary
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Animation
-                        </span>
-                        </li>
-                        <li class="li-two li-two-1">
-                        <span class="tattle-layer-2">
-                            Science Fiction
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="li-one">
-                <span class="tattle-layer-1">Country</span>
-                <i class="layer-1-icon"></i>
-                <div class="box-layer-2 box-layer-2-2 ">
-                    <ul class="ul-two ul-two-2">
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            All
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Iran
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            England
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            India
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            China
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            South Korea
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Canada
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Italy
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            America
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Turkey
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Germany
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Japan
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            France
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Spain
-                        </span>
-                        </li>
-                        <li class="li-two li-two-2">
-                        <span class="tattle-layer-2">
-                            Other...
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="li-one">
-                <span class="tattle-layer-1">Language</span>
-                <i class="layer-1-icon"></i>
-                <div class="box-layer-2">
-                    <ul class="ul-two">
-                        <li class="li-two">
-                        <span class="tattle-layer-2">
-                            All
-                        </span>
-                        </li>
-                        <li class="li-two">
-                        <span class="tattle-layer-2">
-                            Dubbed In Persian
-                        </span>
-                        </li>
-                        <li class="li-two">
-                        <span class="tattle-layer-2">
-                            Original Language
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="li-one">
-                <span class="tattle-layer-1">Age</span>
-                <i class="layer-1-icon"></i>
-                <div class="box-layer-2 box-layer-2-3 ">
-                    <ul class="ul-two ul-two-3">
-                        <li class="li-two li-two-3">
-                        <span class="tattle-layer-2">
-                            All
-                        </span>
-                        </li>
-                        <li class="li-two li-two-3">
-                        <span class="tattle-layer-2">
-                            Under 3 Years
-                        </span>
-                        </li>
-                        <li class="li-two li-two-3">
-                        <span class="tattle-layer-2">
-                            Under 6 Years
-                        </span>
-                        </li>
-                        <li class="li-two li-two-3">
-                        <span class="tattle-layer-2">
-                            Under 12 Years
-                        </span>
-                        </li>
-                        <li class="li-two li-two-3">
-                        <span class="tattle-layer-2">
-                            Under 15 Years
-                        </span>
-                        </li>
-                        <li class="li-two li-two-3">
-                        <span class="tattle-layer-2">
-                            Under 18 Years
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="li-one li-one-1">
-                <div class="box-checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <label class="one" for="checkbox">HD</label>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="box-actions">
-        <span class="Action">
-            Action
-        </span>
-    </div>
-</div>
 
-<script>
-    let LiOne = $('li.li-one')
-    LiOne.hover(function () {
-        $(this).addClass('hover-3')
-    }, function () {
-        $(this).removeClass('hover-3')
-    });
+<main class="page">
+    <h1 class="sr-title">Filter-Film</h1>
 
-    let LiTwo = $('li.li-two')
-    LiTwo.hover(function () {
-        $(this).addClass('hover-1');
-        $(' > span', this).addClass('hover-2');
-    }, function () {
-        $(this).removeClass('hover-1');
-        $(' > span', this).removeClass('hover-2');
-    });
+    <form class="filter-panel" aria-label="Movie and series filters" onsubmit="return false">
+        <div class="filter-bar" role="group" aria-label="Filters">
 
-    LiTwo.click(function () {
-        let Text = $(this).text()
-        let SelectClick = $(this).parents('li.li-one').find('span.tattle-layer-1')
-        let Border = $(this).parents('li.li-one').css({'border': '1px solid #FDB414'})
-        SelectClick.html(Text).css({'color': '#FDB414', Border})
-    })
-    $("li.li-one").click(function () {
-        /*$("div.box-layer-2").slideUp(90)*/                                                                     /* ها لایه زیر شدن بسته باز میان در یکی باگ حل راه */
-        $("div.box-layer-2", this).slideToggle(300)
-        let icon = $(this).find('i.layer-1-icon')
-        icon.toggleClass('icon-click')
-    });
+            <div class="dropdown" data-dropdown>
+                <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    <span class="dropdown-label" data-label>Movies And Series</span>
+                    <svg class="dropdown-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+                        <path d="M8 11.5 2.5 6l1-1L8 9.5 12.5 5l1 1z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu" role="listbox" aria-label="Movies And Series">
+                    <li class="dropdown-option" role="option" aria-selected="true" tabindex="-1"><span>All</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Movies</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Series</span></li>
+                </ul>
+            </div>
 
+            <div class="dropdown dropdown--wide" data-dropdown>
+                <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    <span class="dropdown-label" data-label>Genre</span>
+                    <svg class="dropdown-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+                        <path d="M8 11.5 2.5 6l1-1L8 9.5 12.5 5l1 1z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu--cols-2" role="listbox" aria-label="Genre">
+                    <li class="dropdown-option" role="option" aria-selected="true" tabindex="-1"><span>All</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Religious / History</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Family</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Comedy</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Theater</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Panic</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Short</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Concert</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Action</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Romantic</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Documentary</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Animation</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Science Fiction</span></li>
+                </ul>
+            </div>
 
-    $('span.Action').hover(function () {
-        $(this).addClass('hover-6');
-    }, function () {
-        $(this).removeClass('hover-6');
-    });
-</script>
+            <div class="dropdown dropdown--wide" data-dropdown>
+                <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    <span class="dropdown-label" data-label>Country</span>
+                    <svg class="dropdown-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+                        <path d="M8 11.5 2.5 6l1-1L8 9.5 12.5 5l1 1z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu--cols-3" role="listbox" aria-label="Country">
+                    <li class="dropdown-option" role="option" aria-selected="true" tabindex="-1"><span>All</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Iran</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>England</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>India</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>China</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>South Korea</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Canada</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Italy</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>America</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Turkey</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Germany</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Japan</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>France</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Spain</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Other...</span></li>
+                </ul>
+            </div>
 
+            <div class="dropdown" data-dropdown>
+                <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    <span class="dropdown-label" data-label>Language</span>
+                    <svg class="dropdown-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+                        <path d="M8 11.5 2.5 6l1-1L8 9.5 12.5 5l1 1z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu" role="listbox" aria-label="Language">
+                    <li class="dropdown-option" role="option" aria-selected="true" tabindex="-1"><span>All</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Dubbed In Persian</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Original Language</span></li>
+                </ul>
+            </div>
+
+            <div class="dropdown" data-dropdown>
+                <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    <span class="dropdown-label" data-label>Age</span>
+                    <svg class="dropdown-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+                        <path d="M8 11.5 2.5 6l1-1L8 9.5 12.5 5l1 1z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu" role="listbox" aria-label="Age">
+                    <li class="dropdown-option" role="option" aria-selected="true" tabindex="-1"><span>All</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Under 3 Years</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Under 6 Years</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Under 12 Years</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Under 15 Years</span></li>
+                    <li class="dropdown-option" role="option" aria-selected="false" tabindex="-1"><span>Under 18 Years</span></li>
+                </ul>
+            </div>
+
+            <div class="hd-switch">
+                <input type="checkbox" id="hd" class="sr-checkbox">
+                <label for="hd" class="hd-label">
+                    <span class="hd-text">HD</span>
+                    <span class="hd-track" aria-hidden="true"><span class="hd-thumb"></span></span>
+                </label>
+            </div>
+
+        </div>
+
+        <button type="submit" class="action-btn">Action</button>
+    </form>
+</main>
+
+<script src="js/app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
